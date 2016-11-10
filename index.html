@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--TELLS PHONES NOT TO LIE ABOUT THRIR WIDTH-->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+
+	<!--GOOGLE FONT-->
+	<link href='https://fonts.googleapis.com/css?family=Signika:300,600' rel='stylesheet' type='text/css'>
+	<!--LOAD THE LATEST VERSION OF JQUERY-->
+	<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="hideMenu.js"></script>
+
+<!------ STYLE SHEETS ------>	
+	<!--Reset-->
+	<link rel="stylesheet" href="css/reset.css" />
+	<!--Phone-default-->
+	<link rel="stylesheet" href="css/desktop.css"  />
+	<!--Enhance-tablet-->
+	<link rel="stylesheet" href="css/tablet.css"  />
+	<!--Enhance-desktop-->
+	<link rel="stylesheet" href="css/phone.css" />
+	
+
+	<!--THIS MAKES IE WORK WITH HTML5 AND MEDIA QUERIES-->
+	<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script scr"https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <div class="header-container"> <!--add image width and height in the future-->
+                <a href="#"><img src="images/Logo_02.png" alt="Logo"/></a>
+                <nav class="nav">
+                    <ul class="nav-links">
+                        <a href="#" class="active"><li>Home</li></a>
+                        <a href="#"><li>Contact Us</li></a>
+                        <a href="#Events"><li>Events</li></a>
+                        <a href="#Aboutus"><li>About Us</li></a>
+                        <a href="#Pastors"><li>Pastors</li></a>
+                        <a href="#"><li>Families</li></a>
+                    </ul><!--ul end-->
+                </nav><!--nav end-->
+            </div><!--header-container end-->
+        </header><!--header end--> 
+    </div><!--Container end-->
+    <div style="clear:both;"></div>
+    <!--
+    <div class="Header-main">
+        <img id="church" src="church1.jpg" />
+    </div>
+    -->
+    <section class="banner">
+        <article class="banner-container"> <!--this image should be a background-->
+            <!--<img src="images/Church_view.jpg" alt="Banner" width="1141px"/> -->
+          <div class="overlay"></div>
+            <div class="banner-text">
+                  <h1>Annual Church Events</h1>
+                <h3>5-7 2016</h3>
+                <p>Come and witness the blessings of God and have fun in his presence
+                    With christ in the vessel you can smile at the storm!!
+                </p>
+                
+                <button class="button">Get More Info</button>
+                
+            </div>
+            
+        </article>
+    </section>
+    <section id="Aboutus" class="who"> <!-- Reminder: Give resonable name for this tag-->
+        <article class="whoami-container">
+            <div class="whoami">
+                <img src="images/cross.png" alt="Cross" width="70" height="105"/>
+                <h4>Who we are?</h4>
+                    <p>We are a chosen generation
+                        called forth to show his excilence.
+                    </p>
+            </div>
+            <div class="whoami">
+                <img src="images/church.png" alt="Church" width="70" height="105"/>
+                <h4>Beliefs</h4>
+                    <p>That there is only one true God who’s
+                        name is Jesus christ
+                    </p>
+            </div>
+            <div class="whoami">
+                <img src="images/hands.png" alt="Prayer" width="70" height="105"/>
+                <h4>What we stand for</h4>
+                    <p>We stand for God and all his purity
+                        we take on his yoke and become christ like
+                    </p>
+            </div>
+            <div class="clear"></div>
+        </article>
+    </section>
+    <section id="Pastors" class="meet-our-pastors">
+        <article class="meet-our-pastor-container">
+            <h3>Meet Our Pastors</h3>
+            <p>We welcome you to the New testament Church of God. Here you can find information on all our passtors
+both currently acting and predicesors of the church. You can also read up and the history and background of the church.</p>
+            <div class="pastors">
+                <img src="images/pastor.png" alt="Pastor">
+                <h4>Deja Murphy</h4>
+                <p>joined 2001</p>
+            </div>
+            <div class="pastors">
+                <img src="images/pastor.png" alt="Pastor">
+                <h4>Emil Robertson</h4>
+                <p>joined 2007</p>
+            </div>
+            <div class="pastors">
+                <img src="images/pastor.png" alt="Pastor">
+                <h4>Devani McCarthy</h4>
+                <p>joined 2013</p>
+            </div>
+            <button class="button">Get More Info</button>
+        </article>
+    </section>
+    
+    <section id="Events" class="events">
+        <article class="events-container">
+            <h3>Upcoming Events</h3>
+            <button id="left">Left</button><button id="right">Right</button>
+            <div class="event">
+                <img src="images/crucifix.jpg" alt="Event">
+                <p>Loreum Ipsome ,What is a 
+can and all these things</p>
+                <button class="smaller-button">Get More Info</button>
+            </div>
+            <div class="event">
+                <img src="images/bible.jpg" alt="Event">
+                <p>Loreum Ipsome ,What is a 
+can and all these things</p>
+                <button class="smaller-button">Get More Info</button>
+            </div>
+            <div class="event">
+                <img src="images/churchHall.jpg" alt="Event">
+                <p>Loreum Ipsome ,What is a 
+can and all these things</p>
+                <button class="smaller-button">Get More Info</button>
+            </div>
+        </article>
+    </section>
+    
+</body>
+</html>  

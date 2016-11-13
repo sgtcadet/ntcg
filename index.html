@@ -127,7 +127,10 @@ both currently acting and predicesors of the church. You can also read up and th
     <section id="Events" class="events">
         <article class="events-container">
             <h3>Upcoming Events</h3>
-            <button id="left">Left</button><button id="right">Right</button>
+            <div class="Nav-Buttons">
+                <button type="button" id="left">Left</button>
+                <button type="button" id="right">Right</button>
+             </div>
             <div class="event">
                 <img src="images/crucifix.jpg" alt="Event">
                 <p>Loreum Ipsome ,What is a 
@@ -149,5 +152,210 @@ can and all these things</p>
         </article>
     </section>
     
+ <!--*********************************Sermon Section************************** **********************-->
+    
+    <section id="Sermons" class="church-sermons">
+        <article class="sermon-container">
+        	<h1 id="heading">Sermons</h1>
+        	<div class="sermon-container-left">
+	            <h1 id="upcoming-sermon">Upcoming Sermons</h1>
+	            <br>
+
+	            <!--**************************Sermon 1************************** -->
+
+	            <hr class="left-hr" />
+		        <div class="inform">
+			        <h5 id="welcome">Welcome back to the foot of the cross</h5>
+			            <p>
+			            	Lorem ipsum dolor sit, consectetur adipiscing.<br> 
+			            	Curabitur convallis in sem finibus consequat.
+			            </p>
+			            <br>
+				        <div class="date">
+			            	<!--This Javascript is used to add the date of the sermons to the webite
+			            	    This prevents manually typing it ourselves and can be easily changed.-->
+
+			            	<p id="demo" class="sermon-date"></p>
+			            	<!--The site is currently static, Sermon date information will be pulled from a database using PHP-->
+							<script>
+							var d = new Date();
+							document.getElementById("demo").innerHTML = d.toDateString();
+							</script>
+				        </div>
+				        <div class="name-of-pastors">
+				            <p class="sermon-pastor">Pastor: Bradley Pryce</p>
+				        </div>	
+				   </div>
+					<hr class="left-hr" />
+
+					<!--**************************Next Sermon************************** -->
+
+					<div class="inform">
+			        <h5 id="welcome">Welcome back to the foot of the cross</h5>
+			            <p>
+			            	Lorem ipsum dolor sit, consectetur adipiscing.<br> 
+			            	Curabitur convallis in sem finibus consequat.
+			            </p>
+			            <br>
+				        <div class="date">
+			            	<!--This Javascript is used to add the date of the sermons to the webite
+			            	    This prevents manually typing it ourselves and can be easily changed.-->
+
+			            	<p id="demo2" class="sermon-date"></p>
+			            	<!--The site is currently static, Sermon date information will be pulled from a database using PHP-->
+							<script>
+							var d = new Date();
+							document.getElementById("demo2").innerHTML = d.toDateString();
+							</script>
+				        </div>
+				        <div class="name-of-pastors">
+				            <p class="sermon-pastor">Pastor: Bradley Pryce</p>
+				        </div>	
+				   </div>
+					<hr class="left-hr" />
+					<button type="button" class="sermon-button">See all sermons</button>
+            </div>
+           
+            <!--*******************Latest Sermon Section****************-->
+
+            <div class="sermon-container-right">
+	            <h1 id="latest-sermon">Latest Sermons</h1>
+
+	            <!--**************************Latest Sermon 1************************** -->
+	            <hr class="right-hr" />
+		        <div class="posts">
+			        <h5 id="welcome">Welcome back to the foot of the cross</h5>
+			            <br>
+				        <div class="date">
+			            	<!--This Javascript is used to add the date of the sermons to the webite
+			            	    This prevents manually typing it ourselves and can be easily changed.-->
+
+			            	<p id="demo3" class="sermon-date"></p>
+			            	<!--The site is currently static, Sermon date information will be pulled from a database using PHP-->
+							<script>
+							var d = new Date();
+							document.getElementById("demo3").innerHTML = d.toDateString();
+							</script>
+				        </div>
+				        <div class="name-of-pastors">
+				            <p class="sermon-pastor">Pastor: Bradley Pryce</p>
+				        </div>	
+				        <div class="media-buttons">
+    				        <button class="audio-button" type="button">Audio Record</button>
+    				        <button class="video-button" type="button">Video Recording</button>
+				       </div>
+				   </div>
+				   	<hr class="right-hr" />
+				   	
+			     <!--**************************Latest Sermon 2************************** -->
+		        <div class="posts">
+			        <h5 id="welcome">Welcome back to the foot of the cross</h5>
+				        <div class="date">
+			            	<!--This Javascript is used to add the date of the sermons to the webite
+			            	    This prevents manually typing it ourselves and can be easily changed.-->
+
+			            	<p id="demo4" class="sermon-date"></p>
+			            	<!--The site is currently static, Sermon date information will be pulled from a database using PHP-->
+							<script>
+							var d = new Date();
+							document.getElementById("demo4").innerHTML = d.toDateString();
+							</script>
+				        </div>
+				        <div class="name-of-pastors">
+				            <p class="sermon-pastor">Pastor: Bradley Pryce</p>
+				        </div>	
+				        <div class="media-buttons">
+    				        <button class="audio-button" type="button">Audio Record</button>
+    				        <button class="video-button" type="button">Video Recording</button>
+				       </div>
+				   </div>
+				   	<hr class="right-hr" /> 
+				   	<div class="all-sermon-button"><button class="all-sermons" type="button">See all latest sermons</button></div>
+		    </div>
+        </article>
+    </section>
+    
+    <!--*******************************************About US Section**********************************************-->
+    
+    <section class="about-us-section">
+        <article class="about-us-container">
+            <h1 id="about-us-section">About US</h1>
+            <p id="about-information"> 
+            <!--Why do you have break tags here?? -->
+                 Lorem ipsum dolor sit, consectetur adipiscing<br>
+			     Curabitur convallis in sem finibus consequat.<br>
+			     Lorem ipsum dolor sit, consectetur adipiscing.
+			     Curabitur convallis in sem finibus consequat.
+			 </p>
+			 <div class="video-container">
+			     <iframe width="80%" height="500" src="https://www.youtube.com/embed/uElT6l-k0XI" frameborder="0" allowfullscreen></iframe>
+			 </div>
+			 <div class="advertising-container">
+    			 <div class="stars">
+                    <img src="images/icon-star.png" alt="star" width="100" height="90"/>
+                    <h4>Our Stars</h4>
+                        <p>That there is only one true God who’s
+                            name is Jesus christ</p>
+                </div>
+                <div class="stars">
+                    <img src="images/icon-cross.png" alt="cross" width="100" height="90"/>
+                    <h4>At the Cross</h4>
+                        <p>That there is only one true God who’s
+                            name is Jesus christ
+                        </p>
+                </div>
+                <div class="stars">
+                    <img src="images/teamwork.png" alt="Team work" width="100" height="90"/>
+                    <h4>Team work</h4>
+                        <p>That there is only one true God who’s
+                            name is Jesus christ
+                        </p>
+                </div>
+            </div>
+        </article>
+    </section>
+    
+    <!--FORM SECTION | Contact us-->
+    <section class="contact-us"> <!--I will code this section -Howard -->
+        <article class="contact-us-container">
+            <h4>Contact Us</h4>
+            <p>
+                Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet 
+                 ut et voluptates repudiandae sint et molestiae non recusandae.
+            </p>
+            
+            <span class="address">86 A Gordon Town Road, kingston</span> <span class="telephone">(876) 966-8900</span> <span class="contact-email">contact@newtestamentchurch.com</span>
+            
+            <div>
+                <form action="" method="POST">
+                    <div class="form-col">
+                        <div>
+                            <input id="name" type="text" name="name" placeholder="Your Name...  | John Doe" required/>
+                        </div>
+                        
+                        <div>
+                            <input id="email" type="email" name="email" placeholder="Email ... | example@email.com" required/>
+                        </div>
+                        
+                        <div><!--May need to change this to subject -Howard-->
+                            <input id="website" type="text" name="webite" placeholder="Website ..." required/>
+                        </div>
+                    </div>
+                   
+                   <div class="form-col">
+                       <div>
+                         <textarea id="message" name="message" cols="50" rows="9" placeholder="Your Message ..." required></textarea>
+                       </div>
+                       
+                        <div>
+                            <input type="submit" value="Send Message"/>
+                        </div>
+                   </div>
+                   
+                    
+                </form> <!--FORM END-->
+            </div><!--FORM CONTAINER DIV END-->
+        </article>
+    </section>
 </body>
 </html>  

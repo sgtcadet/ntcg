@@ -381,22 +381,20 @@ img#church{
 }
 .sermon-date::before{
 	/*content:url('../images/sermon_globe.png');*/
-    background: url(../images/sermon_globe.png) no-repeat 0 0;
-    background-size: 20px 20px;
+	background-image: url(../images/sermon_globe.png);
+    background-size: 10px 20px;
     display: inline-block;
-    width: 20px;
+    width: 10px;
     height: 20px;
-    padding: 0 .2em;
     content: "";
 }
 .sermon-date-left::before{
 	/*content:url('../images/sermon_globe.png');*/
-	background: url(../images/sermon_globe.png) no-repeat 0 0;
-    background-size: 20px 20px;
+	background-image: url(../images/sermon_globe.png);
+    background-size: 10px 20px;
     display: inline-block;
-    width: 20px;
+    width: 10px;
     height: 20px;
-    padding: 0 .2em;
     content: "";
 }
 .posts{
@@ -597,4 +595,61 @@ img#church{
 #message{
 	background-image:url('../images/pin.png');
 	background-repeat: no-repeat;
+}
+
+/*
+*
+*
+*FOOTER STYLES
+*
+*/
+.footer{
+	width: 1141px;
+	margin: 1em auto;
+	text-align: center;
+}
+.footer-social-icons span a img{
+	padding:1em;
+	background-color: #5d487f;
+	border-radius: 50%;
+	margin:2.5em;
+}
+/*FOOTER LINKS*/
+.footer-links p{
+	display: inline;
+
+}
+.footer-links{
+	width: 80%;
+	margin:0 auto;
+}
+.footer-links p a{
+	text-decoration: none;
+	border-left:1px solid #c79439;
+	border-right:1px solid #c79439;
+	color:#c79439;
+	padding:.5em;
+	font-size: 25px;
+	
+	margin:0;
+	
+}
+.footer-links > p .home{
+	border-left:none;
+}
+.footer-links > p .about-us{
+	border-left:none;
+}
+.footer-links > p .sermons{
+	border-left:none;
+}
+.footer-links > p .events{
+	border:none;
+	
+}
+.copy-right{
+	background-color: #452d6b;
+	color:#ffffff;
+	margin-top: 2em;
+	padding:2em;
 }

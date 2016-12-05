@@ -279,7 +279,8 @@ img#church{
 	position: relative;
 	/*margin-left: 37px;*/
 	margin: 0 auto;
-	width: 65%;
+	/*width: 65%;*/
+	width:70%;
 	text-align: center;
 	    
 }
@@ -325,6 +326,7 @@ img#church{
     /* width: 20%; */
     /* margin-left: 40px; */
     display: inline-block;
+    margin-left: .5em;
 }
 .sermon-button{
 	color:#86582e;
@@ -372,28 +374,34 @@ img#church{
 	/*content:url('../images/sermon_body.png');*/
 	/*Fix here*/
 	background-image: url(../images/sermon_body.png);
-    background-size: 10px 20px;
+	background-repeat: no-repeat;
+    background-size: 20px 20px;
     display: inline-block;
-    width: 10px;
+    width: 22px;
     height: 20px;
     content: "";
-	
+}
+.sermon-pastor{
+/*	padding:1em 0em;*/
 }
 .sermon-date::before{
 	/*content:url('../images/sermon_globe.png');*/
 	background-image: url(../images/sermon_globe.png);
-    background-size: 10px 20px;
+    background-size: 20px 20px;
     display: inline-block;
-    width: 10px;
+    width: 20px;
     height: 20px;
     content: "";
+}
+.sermon-date-left{
+/*	padding:1em 0em;*/
 }
 .sermon-date-left::before{
 	/*content:url('../images/sermon_globe.png');*/
 	background-image: url(../images/sermon_globe.png);
-    background-size: 10px 20px;
+    background-size: 20px 20px;
     display: inline-block;
-    width: 10px;
+    width: 20px;
     height: 20px;
     content: "";
 }
@@ -572,13 +580,37 @@ img#church{
     margin-right:1.5em;
 }
 .address::before{
-	content:url('../images/location.png');
+	/*content:url('../images/location.png');*/
+	background-image: url('../images/location.png');
+	background-size: 20px 30px;
+    display: inline-block;
+    width: 20px; 
+    height: 30px;
+    content:"";
+    vertical-align: middle;
+}
+.address, .telephone, .contact-email{
+	margin-right: 30px;
 }
 .telephone::before{
-	content:url('../images/telephone.png');
+	/*content:url('../images/telephone.png');*/
+	background-image: url('../images/telephone.png');
+	background-size: 25px 25px;
+    display: inline-block;
+    width: 25px; 
+    height: 25px;
+    content:"";
+    vertical-align: middle;
 }
 .contact-email::before{
-	content:url('../images/message_2.png');
+	/*content:url('../images/message_2.png');*/
+	background-image: url('../images/message_2.png');
+	background-size: 25px 25px;
+    display: inline-block;
+    width: 25px; 
+    height: 25px;
+    content:"";
+   	vertical-align: middle;
 }
 #name{
 	background-image:url('../images/body.png');
@@ -587,10 +619,12 @@ img#church{
 #email{
 	background-image:url('../images/message.png');
 	background-repeat: no-repeat;
+	vertical-align: middle;
 }
-#website{
+#subject{
 	background-image:url('../images/globe.png');
 	background-repeat: no-repeat;
+	vertical-align: middle;
 }
 #message{
 	background-image:url('../images/pin.png');
@@ -605,7 +639,7 @@ img#church{
 */
 .footer{
 	width: 1141px;
-	margin: 1em auto;
+	margin: 0 auto;
 	text-align: center;
 }
 .footer-social-icons span a img{
@@ -630,9 +664,7 @@ img#church{
 	color:#c79439;
 	padding:.5em;
 	font-size: 25px;
-	
 	margin:0;
-	
 }
 .footer-links > p .home{
 	border-left:none;
@@ -645,7 +677,6 @@ img#church{
 }
 .footer-links > p .events{
 	border:none;
-	
 }
 .copy-right{
 	background-color: #452d6b;

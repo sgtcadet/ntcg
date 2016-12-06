@@ -2,6 +2,183 @@
 /* @media only screen and (min-width:600px){ */
 @media only screen and (max-width:1140px){
 
+body{
+  /*background-color:#000;*/  
+}
+/***********************************
+*           HEADER
+************************************/
+header{
+    padding: 0;
+}
+.header-container{
+	width: 100%;
+    
+}
 
+.nav{
+    margin: 0px;
+    float:none;
+    background-color: #452d6b;
+    padding: 1em .5em;
+}
+.nav .nav-links{
+    padding:0;
+	margin-left: 2%;
+}
+.nav .nav-links li{
+    width:auto;
+    margin:0;
+    background-color: #452d6b;
+    float:left;
+}
+.nav .nav-links li a {
+    text-decoration: none;
+    /*margin:0px;*/
+	margin: 0;
+    border-radius: 0;
+    padding: 1em .5em;
+    font-weight: 300;
+    font-size: .8em;
+    border-right: solid 1px rgba(0,0,0,0.2);
+    border-left: solid 1px rgba(255,255,255,0.2);
+	
+}
+.nav-links a.active{
+    background-color:none;
+}
+/***********************************
+*           HEADER END
+************************************/
+
+/***********************************
+*           BANNER
+************************************/
+.banner{
+    width:100%;
+}
+.banner-container{
+    width:98%;
+    margin-left:2%;
+}
+.banner-text{
+    width:auto;
+    position: absolute;
+    bottom:0;
+}
+.banner-text h1{
+    font-size: 70px;
+}
+.banner-text h3{
+    font-size: 50px;
+}
+.banner-text p{
+	font-size: 30px;
+	padding:.2em;
+}
+.button{
+    margin:.5em auto;
+    padding:.5em;
+    font-size: 20px;
+    
+}
+/***********************************
+*           BANNER END
+************************************/
+
+
+
+/***********************************
+*           Who we are US
+************************************/
+.whoami-container{
+    width: 100%
+}
+.whoami{
+    width: 30%;
+}
+/***********************************
+*           Who we are END
+************************************/
+
+
+/***********************************
+*           Meet our pastors
+************************************/
+.meet-our-pastor-container{
+    width:100%;
+}
+
+/***********************************
+*           Meet our pastors ends
+************************************/
+
+/***********************************
+*           Events
+************************************/
+.events-container{
+    width:100%;
+}
+.event img{
+    width:98%;
+}
+/***********************************
+*           Events ends
+************************************/
+
+/***********************************
+*           SERMONS
+************************************/
+.sermon-container{
+    width:100%;
+}
+.sermon-container-left{
+    width:40%;
+}
+.sermon-container-right{
+    width:40%
+}
+/***********************************
+*           SERMONS ends
+************************************/
+
+/***********************************
+*          ABOUT US
+************************************/
+.about-us-container, #about-information{
+    width:100%;
+}
+.video-container iframe{
+    width:98%;
+}
+.advertising-container{
+    width:100%;
+}
+
+
+
+/***********************************
+*           ABOUT US ends
+************************************/
+
+/***********************************
+*           CONTACT US
+************************************/
+.contact-us-container{
+    width:100%;
+}
+/***********************************
+*           CONTACT US ends
+************************************/
+
+/***********************************
+*           FOOTER
+************************************/
+.footer{
+    width:100%;
+}
+/***********************************
+*           FOOTER END
+************************************/
 
 }

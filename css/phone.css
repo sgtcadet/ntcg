@@ -1,10 +1,123 @@
 /*@media only screen and (max-width:320px) if its a Degrative approach*/
 
-@media only screen and (max-width:320px){
+/*@media only screen and (max-width:320px){*/
+/*@media only screen and (max-width:420px){*/
+@media only screen and (max-width:550px){
 /*------Prevents iphone from resizing in landscape mode ------*/
 html {-webkit-text-size-adjust:none;}
 
 /*------------ apply a natural box layout model to all elements ------------*/
 *{-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
 
+
+/***********************************
+*           HEADER
+************************************/
+header{
+    position: absolute;
+}
+.header-container img{
+    width:100%;
+}
+.nav{
+    width:100%;
+}
+.nav .nav-links{
+    margin: 0;
+}
+.nav .nav-links li{
+    display: block;
+    float:none;
+}
+.nav .nav-links li a{
+    width:98%;
+    display: block;
+}
+
+/***********************************
+*           HEADER END
+************************************/
+
+/***********************************
+*           Who we are US
+************************************/
+.whoami{
+    width: 98%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+/***********************************
+*           Who we are END
+************************************/
+
+
+/***********************************
+*           Meet our pastors
+************************************/
+.meet-our-pastor-container p{
+    padding:0;
+    margin-top: .5em;
+    line-height: normal;
+}
+.pastors{
+    width: 98%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/***********************************
+*           Meet our pastors ends
+************************************/
+
+
+/***********************************
+*           SERMONS
+************************************/
+.sermon-container-left{
+    width:98%;
+}
+.sermon-container-right{
+    width:98%;
+    margin-top:.9em;
+}
+/***********************************
+*           SERMONS ends
+************************************/
+
+
+
+/***********************************
+*          ABOUT US
+************************************/
+.video-container iframe{
+    width:100%;
+}
+.stars{
+    width:98%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+/***********************************
+*           ABOUT US ends
+************************************/
+
+
+/***********************************
+*           CONTACT US
+************************************/
+.contact-us-container p{
+    line-height: normal;
+}
+.contact-us-container span{
+    width: 98%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.form-col{
+    width: 98%;
+    margin: 0;
+}
+/***********************************
+*           CONTACT US ends
+************************************/
 }

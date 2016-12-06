@@ -684,3 +684,16 @@ img#church{
 	margin-top: 2em;
 	padding:2em;
 }
+/*SOCIAL ICON EFFECTS*/
+#facebook img:hover{
+	background-color: #3b5998;
+}
+#twitter img:hover{
+	background-color: #0084B4;
+}
+#instagram img:hover{
+	background-color: #9e6f4f;
+}
+#pinterest img:hover{
+	background-color: #bd081c;
+}

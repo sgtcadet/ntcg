@@ -282,9 +282,8 @@ img#church{
 	/*width: 65%;*/
 	width:70%;
 	text-align: center;
-	    
 }
-#welcome{
+.welcome{
 	padding-bottom: 12px;
 }
 #demo, #demo2{
@@ -509,6 +508,7 @@ img#church{
 	width:30%;
 	display:inline-block;
 	padding:.5em 0 2em 0;
+	
 }
 .stars img{
 	background-color: #452d6b;

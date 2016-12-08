@@ -55,11 +55,13 @@ header{
 *           BANNER
 ************************************/
 .banner{
-    width:100%;
+    /*width:100%;*/
 }
 .banner-container{
-    width:98%;
-    margin-left:2%;
+    width:100%;
+    /*margin-left:2%;
+    margin-right:2%;*/
+    background-size: cover;
 }
 .banner-text{
     width:auto;
@@ -73,6 +75,7 @@ header{
     font-size: 50px;
 }
 .banner-text p{
+    /*box-sizing: border-box;*/
 	font-size: 30px;
 	padding:.2em;
 }
@@ -95,7 +98,13 @@ header{
     width: 100%
 }
 .whoami{
+    /*width: 30%;*/
+    padding:0;
+    vertical-align: top;
+}
+.whoami img{
     width: 30%;
+    padding:1em;
 }
 /***********************************
 *           Who we are END
@@ -136,7 +145,55 @@ header{
     width:40%;
 }
 .sermon-container-right{
-    width:40%
+    width:40%;
+    border-left:1px solid grey;
+}
+.sermon-container #upcoming-sermon{
+ 	font-size: 25px;
+ 	padding-bottom: 27px;
+    /*margin-top: 35px;*/
+    /* margin-left: 20px; */
+    /* width: 50%; */
+}
+.sermon-container-right #latest-sermon{
+	font-size: 25px;
+	/*margin-top: 35px;*/
+	/*margin-left: 4em;*/
+	/*width: 50%;*/
+	padding-bottom: 27px;
+}
+.inform{
+    width:auto;
+    text-align: center;
+}
+.date-left {
+    float:none;
+}
+.date{
+    float: none;
+}
+.name-of-pastors {
+    float: none;
+    margin-left:0;
+}
+#demo3 {
+    text-align: center;
+    float: none;
+    margin-left:0px; 
+}
+#demo4 {
+    text-align: center;
+    float: none;
+    margin-left:0px;
+}
+.audio-button {
+    margin-right: 0;
+}
+.all-sermon-button {
+    width:98%;
+}
+.all-sermons {
+    font-size: 15px;
 }
 /***********************************
 *           SERMONS ends
@@ -149,10 +206,18 @@ header{
     width:100%;
 }
 .video-container iframe{
-    width:98%;
+    width:100%;
 }
 .advertising-container{
     width:100%;
+}
+.stars{
+    vertical-align: top;
+}
+.stars img{
+	background-color: #452d6b;
+	padding:.5em;
+	border-radius: 50%;/*100%*/
 }
 
 
@@ -167,6 +232,20 @@ header{
 .contact-us-container{
     width:100%;
 }
+.contact-us-container span{
+    display:block;
+    width:100%;
+}
+.address, .telephone, .contact-email{
+	margin-right: 0px;
+}
+div > form{
+    width:100%;
+}
+.form-col{
+    width:100%;
+    margin:0;
+}
 /***********************************
 *           CONTACT US ends
 ************************************/
@@ -176,6 +255,9 @@ header{
 ************************************/
 .footer{
     width:100%;
+}
+.footer-social-icons span a img{
+    margin:1.5em 1em;
 }
 /***********************************
 *           FOOTER END

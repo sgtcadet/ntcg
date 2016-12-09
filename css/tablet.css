@@ -98,12 +98,12 @@ header{
     width: 100%
 }
 .whoami{
-    /*width: 30%;*/
-    padding:0;
+    padding:0px;
     vertical-align: top;
+    margin-top: 10px;
 }
 .whoami img{
-    width: 30%;
+    width: 50%;
     padding:1em;
 }
 /***********************************
@@ -206,7 +206,10 @@ header{
     width:100%;
 }
 .video-container iframe{
-    width:100%;
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height:260px;
 }
 .advertising-container{
     width:100%;
@@ -220,10 +223,51 @@ header{
 	border-radius: 50%;/*100%*/
 }
 
-
-
 /***********************************
 *           ABOUT US ends
+************************************/
+
+/***********************************
+*           Family
+************************************/
+
+.table-container{
+	width:90%;
+	margin:auto;
+	text-align:center;
+	color:#ffffff;
+	background-color:#452d6b;
+	margin-bottom: 5%;
+	font-size:14px;
+}
+.table-container h1{
+    font-size: 50px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    color:black;
+    font-family: arial, sans-serif;
+    font-size:5;
+}
+.tag-line{
+	margin-bottom:20px;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+table#t01 {
+    width: 100%;    
+    background-color: #f1f1c1;
+}
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+/***********************************
+*           Family End
 ************************************/
 
 /***********************************

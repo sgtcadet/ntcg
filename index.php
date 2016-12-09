@@ -39,15 +39,15 @@
     <div class="container">
         <header>
             <div class="header-container"> <!--add image width and height in the future-->
-                <a href="#"><img id="church-logo" src="images/Logo_02.png" alt="Logo"/></a>
+                <a href="#"><img src="images/Logo_02.png" alt="Logo"/></a>
                 <nav class="nav">
                     <ul class="nav-links" id="Topnav">
                         <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#contact-us">Contact Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
                         <li><a href="#Events">Events</a></li>
                         <li><a href="#Aboutus">About Us</a></li>
                         <li><a href="#Pastors">Pastors</a></li>
-                        <li><a href="#Family">Families</a></li>
+                        <li><a href="#">Families</a></li>
                         <li class="icon">
                         <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a></li>
                         
@@ -85,21 +85,21 @@
     <section id="Aboutus" class="who"> <!-- Reminder: Give resonable name for this tag-->
         <article class="whoami-container">
             <div class="whoami">
-                <img src="images/cross.png" alt="Cross" width="90" height="90"/>
+                <img src="images/cross.png" alt="Cross" width="80" height="100"/>
                 <h4>Who we are?</h4>
                     <p>We are a chosen generation
                         called forth to show his excilence.
                     </p>
             </div>
             <div class="whoami">
-                <img src="images/church.png" alt="Church" width="90" height="90"/>
+                <img src="images/church.png" alt="Church" width="80" height="100"/>
                 <h4>Beliefs</h4>
                     <p>That there is only one true God who’s
                         name is Jesus christ
                     </p>
             </div>
             <div class="whoami">
-                <img src="images/hands.png" alt="Prayer" width="90" height="90"/>
+                <img src="images/hands.png" alt="Prayer" width="80" height="100"/>
                 <h4>What we stand for</h4>
                     <p>We stand for God and all his purity
                         we take on his yoke and become christ like
@@ -288,8 +288,9 @@ can and all these things</p>
         <article class="about-us-container">
             <h1 id="about-us-section">About US</h1>
             <p id="about-information"> 
-                 Lorem ipsum dolor sit, consectetur adipiscing
-			     Curabitur convallis in sem finibus consequat.
+            <!--Why do you have break tags here?? By-howard-->
+                 Lorem ipsum dolor sit, consectetur adipiscing<!--<br> By-Howard-->
+			     Curabitur convallis in sem finibus consequat.<!--<br> By-Howard-->
 			     Lorem ipsum dolor sit, consectetur adipiscing.
 			     Curabitur convallis in sem finibus consequat.
 			 </p>
@@ -305,7 +306,7 @@ can and all these things</p>
                             name is Jesus christ</p>
                 </div>
                 <div class="stars">
-                    <img src="images/icon-cross.png" alt="cross" width="90" height="90"/>
+                    <img src="images/icon-cross.png" alt="cross" width="100" height="90"/>
                     <h4>At the Cross</h4>
                         <p>That there is only one true God who’s
                             name is Jesus christ
@@ -323,64 +324,8 @@ can and all these things</p>
         </article>
     </section>
     
-     <!--Family Section-->
-     
-    <section id="Family">
-        <article class="table-container">
-                <h1 class="families">Families</h1>
-            <p class="tag-line">Welcome to the Kellits New Testament Church of God where
-               we're not just members but we are <strong>FAMILY</strong>
-            </p>
-            
-            <table style="width:100%; margin-top:30px">
-                <th style="text-align:center; padding:10px;font-size:20px;" colspan="3">Pastor's Family</th>
-                  <tr>
-                    <th>Firstname</th>
-                    <th>Lastname</th> 
-                    <th>Age</th>
-                  </tr>
-                <tr>
-                    <td>Jill</td>
-                    <td>Smith</td>
-                    <td>45</td>
-                  </tr>
-                  <tr>
-                    <td>Eve</td>
-                    <td>Smith</td>
-                    <td>41</td>
-                  </tr>
-                  <tr>
-                    <td>Kyle</td>
-                    <td>Smith</td>
-                    <td>16</td>
-                  </tr>
-                	<tr><th style="text-align:center; padding:10px;font-size:20px;" colspan="3">Decon Brown's Family</th></tr
-                  <tr>
-                    <th>Firstname</th>
-                    <th>Lastname</th> 
-                    <th>Age</th>
-                  </tr>
-                  <tr>
-                    <td>William</td>
-                    <td>Mackenzie</td>
-                    <td>38</td>
-                  </tr>
-                  <tr>
-                    <td>Eve</td>
-                    <td>Mackenzie</td>
-                    <td>36</td>
-                  </tr>
-                  <tr>
-                    <td>Sheniece</td>
-                    <td>Mackenzie</td>
-                    <td>12</td>
-                  </tr>
-                </table>
-        </article>
-    </section>
-    
     <!--FORM SECTION | Contact us-->
-    <section id="contact-us" class="contact-us"> <!--I will code this section -Howard -->
+    <section class="contact-us"> <!--I will code this section -Howard -->
         <article class="contact-us-container">
             <h4>Contact Us</h4>
             <p>
@@ -391,7 +336,87 @@ can and all these things</p>
             <span class="address">86 A Gordon Town Road, kingston</span> <span class="telephone">(876) 966-8900</span> <span class="contact-email">contact@newtestamentchurch.com</span>
             
             <div>
-                <form action="" method="POST">
+                <?php
+                    function test_input($data)
+					{
+						//strip whitespace from begining and end of string
+						$data = trim($data);
+
+						//removes backslasses
+						$data = stripcslashes($data);
+
+						//converts some predefined characters to HTML entitites
+						$data = htmlspecialchars($data);
+
+						return $data;
+					}
+					
+					//check for header injection
+					function has_header_injection($str)
+					{
+						return preg_match("/[\r\n]/", $str);
+					}
+					
+					//Define variables
+					$name = $email = $subject = $msg = "";
+				    
+				    //if form request method is post
+					if($_SERVER["REQUEST_METHOD"] == "POST")
+					{
+						//collect form data
+						$name 	    = test_input($_POST['name']);
+						$email 	    = test_input($_POST['email']);
+						$subject    = test_input($_POST['subject'])
+						$msg 	    = test_input($_POST['message']);
+
+						if(has_header_injection($name) || has_header_injection($email))
+						{
+							die(); //kill the script
+						}
+
+						//due to Javascript front-end validation this block should not run 
+						if(!$name || !$email || !$subject || !$msg)
+						{
+							echo '<h4>All fields are required!</h4>';
+							exit;
+						}
+
+						//Recipent of message
+						$to 	= "geovaniluigid@gmail.com"; //"contact@newtestamentchurch.com";
+
+						//subject of message
+						//$subject	= "$name sent you a message via your contact form. \r\n";
+						$msgSubject 	= "$name sent you a message.\r\n";
+						
+						//Message format
+						$message 	= "Name: $name\r\n";
+						$message 	.= "Email: $email\r\n";
+						$message    .= "Subject: $subject\r\n";
+						$message 	.= "Message: \r\n$msg";
+
+						wordwrap($message,72);
+
+						//setting mail header into a varibale
+						$headers 	= "MIME-Version 1.0\r\n";
+						$headers	.= "Content-type: text/plain; charset=iso-8859-1\r\n";
+						$headers	.= "From: $name <$email> \r\n;";
+						$headers	.= "X-Priority:1\r\n";
+						$headers	.= "X-MSMAIL-Prior00ity: High\r\n\r\n";
+
+						//send the email
+						mail($to,$msgSubject,$message,$headers);	
+                ?>
+                    <!--show success message after email has been sent-->
+							<h5>Thank you for contacting Kellits New Testament Church of God!</h5>
+							<p>Please allow 24 hours for a response.</p>
+							<p><a href="index.php">&laquo;Go To Home Page</a></p>
+                
+                <?php
+					}
+					else
+					{
+                ?>
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
                     <div class="form-col">
                         <div>
                             <input id="name" type="text" name="name" placeholder="Your Name...  | John Doe" required/>
@@ -418,6 +443,7 @@ can and all these things</p>
                    
                     
                 </form> <!--FORM END-->
+                <?php }?>
             </div><!--FORM CONTAINER DIV END-->
         </article>
     </section>

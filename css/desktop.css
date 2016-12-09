@@ -47,6 +47,7 @@ header{
 .nav-links a.active{
 	background-color: #ecb540;
 }
+ul.nav-links li.icon{display:none;}
 /*
 .Header-main{
 	margin-top: 50px;
@@ -486,8 +487,9 @@ img#church{
 	font-size: 35px;
 }
 #about-information{
-	width:1141px;
-	display: block;
+	/*width:1141px;
+	display: block;*/
+	padding:.5em 1em;
 	margin:auto;
 	text-align: center;
 	padding-bottom: 2em;
@@ -523,6 +525,44 @@ img#church{
 	color:#252525;
 	font-size: 20px;
 }
+
+/**************************Family Section***********************************/
+.table-container h1{
+    font-size:70pt;
+}
+.table-container{
+	width:1141px;
+	margin:auto;
+	text-align:center;
+	/*border:1px solid red; */
+	color:#ffffff;
+	background-color:#452d6b;
+	margin-bottom: 5%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    color:black;
+    font-family: arial, sans-serif;
+    font-size:5;
+}
+.tag-line{
+	margin-bottom:20px;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+table#t01 {
+    width: 100%;    
+    background-color: #f1f1c1;
+}
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+/**************************End Family Section***********************************/
 
 /*CONTACT US SECTION*/
 .contact-us{

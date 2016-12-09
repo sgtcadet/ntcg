@@ -14,24 +14,76 @@ html {-webkit-text-size-adjust:none;}
 *           HEADER
 ************************************/
 header{
-    position: absolute;
+    /*position: absolute*/
+    position:relative;
 }
 .header-container img{
     width:100%;
+    height:67px;
 }
 .nav{
     width:100%;
+    /*height:65px;*/
+ 
+
 }
-.nav .nav-links{
-    margin: 0;
+ul.nav-links{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      /*background-color: red;*/
 }
-.nav .nav-links li{
+ul.nav-links li{
+    /*display: block;*/
+    text-align: center;
+}
+ul.nav-links li a{
+    /*width:98%;
+    display: block;*/
+    display: inline-block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 17px;
+}
+ul.nav-links li a:hover{
+    background-color: #ecb540;
+}
+ul.nav-links li.icon{display:none;}
+
+ ul.nav-links  li:not(:first-child) {display: none;}
+  ul.nav-links  li.icon {
+     width:50px;
+    float: right;
+    display: inline-block;
+  }
+
+  ul.nav-links.responsive {position: relative;}
+  ul.navlinks.responsive li.icon {
+    width:50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.nav-links.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.nav-links.responsive li a {
     display: block;
-    float:none;
+    text-align: center;
+  }
+
+.banner{
+    height: 628px;
 }
-.nav .nav-links li a{
-    width:98%;
-    display: block;
+.banner-text{
+    /*top: 21%;*/
+    position:relative;
+    
 }
 
 /***********************************
@@ -45,6 +97,7 @@ header{
     width: 98%;
     margin-left: 2%;
     margin-right: 2%;
+    margin-top: 10px;
 }
 /***********************************
 *           Who we are END
@@ -93,7 +146,10 @@ header{
 *          ABOUT US
 ************************************/
 .video-container iframe{
-    width:100%;
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height:55%;
 }
 .stars{
     width:98%;
@@ -104,6 +160,47 @@ header{
 *           ABOUT US ends
 ************************************/
 
+/***********************************
+*           Family
+************************************/
+.table-container h1{
+    font-size:40pt;
+}
+.table-container{
+	width:90%;
+	margin:auto;
+	text-align:center;
+	color:#ffffff;
+	background-color:#452d6b;
+	margin-bottom: 5%;
+	font-size:14px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    color:black;
+    font-family: arial, sans-serif;
+    font-size:5;
+}
+.tag-line{
+	margin-bottom:20px;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+table#t01 {
+    width: 100%;    
+    background-color: #f1f1c1;
+}
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+/***********************************
+*           Family End
+************************************/
 
 /***********************************
 *           CONTACT US
